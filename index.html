@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Valentine</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Canvas for Hearts -->
+    <canvas id="heartCanvas"></canvas>
+
+    <!-- Navigation (Simple) -->
+    <nav>
+        <div class="logo">For my Valentine</div>
+        <button id="musicBtn"><ion-icon name="musical-notes-outline"></ion-icon> Play Music</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="glow-text">Happy Valentine's Day!</h1>
+            <p>Ты - самое лучшее, что есть в моей жизни.</p>
+            <a href="#letter" class="cta-btn">Прочитать письмо</a>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section id="counter">
+        <h2>Мы вместе уже:</h2>
+        <div class="timer-container">
+            <div class="time-box">
+                <span id="days">0</span>
+                <p>Дней</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">0</span>
+                <p>Часов</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">0</span>
+                <p>Минут</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">0</span>
+                <p>Секунд</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Наши Моменты</h2>
+        <div class="gallery-grid">
+            <!-- Placeholders for images. User should replace src -->
+            <div class="gallery-item"><img src="images/img1.jpg" alt="Photo 1"></div>
+            <div class="gallery-item"><img src="images/img2.jpg" alt="Photo 2"></div>
+            <div class="gallery-item"><img src="images/img3.JPG" alt="Photo 3"></div>
+            <div class="gallery-item"><img src="images/img5.JPG" alt="Photo 4"></div>
+            <div class="gallery-item"><img src="images/img4.png" alt="Photo 5"></div>
+            <div class="gallery-item"><img src="images/img6.JPG" alt="Photo 6"></div>
+        </div>
+    </section>
+
+    <!-- Letter Section -->
+    <section id="letter">
+        <div class="letter-container">
+            <h2>Моё письмо тебе</h2>
+            <div class="letter-content">
+                <p>Дорогая,</p>
+                <p>В этот день я хочу еще раз сказать тебе, как сильно я тебя люблю</p>
+                <p>Ты - самое лучшее, что есть в моей жизни, солнце.</p>
+                <p>Спасибо тебе большое, что поддерживаешь меня во всех начинаниях и веришь в меня.</p>
+                <p>Я обещаю тебе, что всегда буду рядом, чтобы поддержать тебя, утешить и разделить с тобой радость.</p>
+                <br>
+                <p class="signature">С любовью,<br>Арафат</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with love for you</p>
+    </footer>
+
+    <!-- Hidden Audio Element -->
+    <audio id="bgMusic" loop>
+        <!-- User needs to add a music file here or use a link -->
+        <source src="" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
